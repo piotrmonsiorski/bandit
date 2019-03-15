@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+
+    <title>One armed-bandit</title>
+</head>
+
+<body>
+
+    <h1>One-Armed Bandit</h1>
+    
+    <div class="carousel">
+        <div class="drum" id="drum-1">
+            <div class="drum-wrap">
+                <div class="field"></div>
+                <div class="field"></div>
+                <div class="field"></div>
+                <div class="field"></div>
+                <div class="field"></div>
+            </div>
+        </div>
+        <div class="drum" id="drum-2">
+            <div class="drum-wrap">
+                <div class="field"></div>
+                <div class="field"></div>
+                <div class="field"></div>
+                <div class="field"></div>
+                <div class="field"></div>
+            </div>
+        </div>
+        <div class="drum" id="drum-3">
+            <div class="drum-wrap">
+                <div class="field"></div>
+                <div class="field"></div>
+                <div class="field"></div>
+                <div class="field"></div>
+                <div class="field"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="play">
+        <h4>your bid</h4>
+        <input type="number" id="bid">
+        <h4>You have <span id="wallet"></span>$ left</h4>
+        <button id="play">Spin</button>
+    </div>
+    
+    <div class="game-summary">
+        <p class="result"><span id="game-result"></span></p>
+        <p class="summary">You played <span id="games-total"></span> game(s), you won <span id="games-won"></span> time(s) and lost <span id="games-lost"></span> time(s)</p>
+    </div>
+
+    <script src="js/game.js"></script>
+</body>
+
+</html>

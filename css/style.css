@@ -1,0 +1,109 @@
+h1 {
+  text-align: center;
+  font-weight: normal;
+  font-family: 'Pacifico';
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+body {
+  background-color: #ddd;
+}
+
+.carousel {
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 50px;
+  box-sizing: border-box;
+}
+.carousel .drum {
+  position: relative;
+  z-index: 1;
+  width: 30%;
+  height: 200px;
+  border: 5px solid #555;
+  overflow: hidden;
+  border-top: 3px solid #aaa;
+  border-left: 3px solid #aaa;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  border-width: 10px;
+}
+.carousel .drum .drum-wrap {
+  position: relative;
+  top: 0;
+  transition: top 0s ease-in-out;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  z-index: -1;
+  background-color: white;
+}
+.carousel .drum .drum-wrap .field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  box-shadow: inset 0 0 30px #bbb;
+  color: #333;
+}
+.carousel .drum .drum-wrap .field i {
+  display: block;
+}
+
+.play {
+  padding: 0 50px;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.play h4 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Roboto';
+  font-weight: bold;
+  margin: 0 0 5px;
+}
+.play input {
+  display: block;
+  width: 100px;
+  margin: 0 auto 15px;
+  padding: 10px 25px;
+  text-align: center;
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.play button {
+  background-color: #222;
+  border: 0;
+  color: white;
+  font-weight: normal;
+  font-family: 'Pacifico';
+  margin-top: 10px;
+  padding: 25px 50px;
+  font-size: 3rem;
+}
+
+.game-summary p {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.game-summary p.summary {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+span {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */
